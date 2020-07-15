@@ -689,6 +689,11 @@
     estree-walker "^1.0.1"
     picomatch "^2.2.2"
 
+"@salesforce-ux/design-system@^2.12.2":
+  version "2.12.2"
+  resolved "http://npm.lwcjs.org/@salesforce-ux/design-system/-/design-system-2.12.2/f2d393da0d277f4d755b693a3581c6b63c6bc412.tgz#f2d393da0d277f4d755b693a3581c6b63c6bc412"
+  integrity sha512-a2GiCsNfQD8o+6jEieg+PbFlsbjQGNqgImRr/Xeb13Hea3x+QYwJ1XTbVqSz239GGTOiUScjD7/QN+gb5R4giQ==
+
 "@types/estree@0.0.39":
   version "0.0.39"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-0.0.39.tgz#e177e699ee1b8c22d23174caaa7422644389509f"

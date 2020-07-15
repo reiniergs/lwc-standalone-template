@@ -1,34 +1,38 @@
 Arguments: 
-  /usr/local/bin/node /opt/yarn-v1.22.4/bin/yarn.js --non-interactive
+  /Users/reinier.guerra/.nvm/versions/node/v10.19.0/bin/node /usr/local/Cellar/yarn/1.19.2/libexec/bin/yarn.js add @salesforce/design-system
 
 PATH: 
-  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  /Users/reinier.guerra/github/moddable/build/bin/mac/release:/Users/reinier.guerra/.nvm/versions/node/v10.19.0/bin:/Users/reinier.guerra/Installed/apache-maven-3.6.0/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/Postgres.app/Contents/Versions/latest/bin:/Users/reinier.guerra/github/moddable/build/bin/mac/release:/Users/reinier.guerra/.nvm/versions/node/v10.19.0/bin:/Users/reinier.guerra/Installed/apache-maven-3.6.0/bin
 
 Yarn version: 
-  1.22.4
+  1.19.2
 
 Node version: 
-  10.20.1
+  10.19.0
 
 Platform: 
-  linux x64
+  darwin x64
 
 Trace: 
-  SyntaxError: /sandbox/package.json: Unexpected string in JSON at position 549
-      at JSON.parse (<anonymous>)
-      at /opt/yarn-v1.22.4/lib/cli.js:1625:59
-      at Generator.next (<anonymous>)
-      at step (/opt/yarn-v1.22.4/lib/cli.js:310:30)
-      at /opt/yarn-v1.22.4/lib/cli.js:321:13
+  Error: https://npm.lwcjs.org/@salesforce%2fdesign-system: no such package available
+      at Request.params.callback [as _callback] (/usr/local/Cellar/yarn/1.19.2/libexec/lib/cli.js:66927:18)
+      at Request.self.callback (/usr/local/Cellar/yarn/1.19.2/libexec/lib/cli.js:140586:22)
+      at Request.emit (events.js:198:13)
+      at Request.<anonymous> (/usr/local/Cellar/yarn/1.19.2/libexec/lib/cli.js:141558:10)
+      at Request.emit (events.js:198:13)
+      at IncomingMessage.<anonymous> (/usr/local/Cellar/yarn/1.19.2/libexec/lib/cli.js:141480:12)
+      at Object.onceWrapper (events.js:286:20)
+      at IncomingMessage.emit (events.js:203:15)
+      at endReadableNT (_stream_readable.js:1145:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
 
 npm manifest: 
   {
     "name": "lwc-standalone-playground",
     "version": "1.0.0",
     "description": "",
-    "main": "src/index.js",
     "scripts": {
-      "start": "nodemon ./src/index.js --ignore ./public",
+      "start": "node ./src/server.js --ignore ./public",
       "build": "rollup -c"
     },
     "dependencies": {
@@ -44,7 +48,7 @@ npm manifest:
     "devDependencies": {
       "nodemon": "1.18.4"
     },
-    "li"
+    "license": "MIT",
     "keywords": []
   }
 
