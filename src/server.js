@@ -3,7 +3,7 @@ const path = require("path");
 const app = express();
 const port = 3000;
 const rollup = require("rollup");
-const config = require("../roolup.config");
+const config = require("../rollup.config");
 
 app.use(express.static("public"));
 
@@ -16,7 +16,5 @@ app.listen(port, () =>
 );
 
 (async () => {
-  const bundle = await rollup.rollup(config);
-  // await bundle.write(config.output);
-  // await bundle.write(config.output);
+  const bundle = await rollup.watch(config);
 })();
