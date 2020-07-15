@@ -18,6 +18,11 @@ app.listen(port, () =>
 (async () => {
   const watcher = await rollup.watch(config);
   watcher.on('event', (event) => {
-    console.log(JSON.stringify(event));
+    if (event.code === 'START') {
+      console.log('Compiling...');
+    }
+    if (event.code === "END") {
+      console.log('Done!');
+    }
   });
 })();
