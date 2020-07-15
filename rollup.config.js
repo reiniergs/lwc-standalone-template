@@ -12,7 +12,9 @@ module.exports = {
     format: "esm"
   },
   plugins: [
-    lwcRollupPlugin(),
+    lwcRollupPlugin({
+        modules: [{ npm: "@salesforce-ux/design-system" }]
+    }),
     replace({
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
     })

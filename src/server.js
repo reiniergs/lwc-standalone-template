@@ -16,5 +16,8 @@ app.listen(port, () =>
 );
 
 (async () => {
-  const bundle = await rollup.watch(config);
+  const watcher = await rollup.watch(config);
+  watcher.on('event', (event) => {
+    console.log(JSON.stringify(event));
+  });
 })();
