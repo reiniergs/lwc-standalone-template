@@ -2173,6 +2173,11 @@ lru-cache@^4.0.1:
     pseudomap "^1.0.2"
     yallist "^2.1.2"
 
+lwc-components-lightning@^1.7.3-alpha:
+  version "1.7.3-alpha"
+  resolved "http://npm.lwcjs.org/lwc-components-lightning/-/lwc-components-lightning-1.7.3-alpha/4ca49849420517fdc92c356f528525510848fc9d.tgz#4ca49849420517fdc92c356f528525510848fc9d"
+  integrity sha512-GWlzrRd8b8UmRMw67+c+BXsD8ncvXTn7X03kowV+sH5KrUDnfWQkDK4EgMcbyoNDiuHfX+LFhclXAryvQuzguw==
+
 magic-string@^0.25.2, magic-string@^0.25.5:
   version "0.25.7"
   resolved "https://registry.yarnpkg.com/magic-string/-/magic-string-0.25.7.tgz#3f497d6fd34c669c6798dcb821f2ef31f5445051"
