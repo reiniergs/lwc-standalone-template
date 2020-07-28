@@ -13,10 +13,10 @@ module.exports = {
   },
   plugins: [
     lwcRollupPlugin({
-        modules: [
-          { npm: "@salesforce-ux/design-system" },
-          { npm: 'lwc-components-lightning' },
-        ]
+      modules: [
+        { npm: "@salesforce-ux/design-system" },
+        { npm: "lightning-base-components" }
+      ]
     }),
     replace({
       "process.env.NODE_ENV": JSON.stringify(process.env.NODE_ENV)
